@@ -1,7 +1,7 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800;
-  color: rgb(201, 208, 221);
+  color: rgb(127, 148, 148);
 }
 
 body {
@@ -17,6 +17,10 @@ main {
   align-items: center;
   flex-direction: column;
   box-shadow: 2px 2px 15px rgb(20, 20, 20);
+}
+
+.articles-main {
+  width: 75vw;
 }
 
 h1 {
@@ -66,4 +70,25 @@ input {
 
 .hidden {
   display: none;
+}
+
+.articles-wrapper {
+  width: 70%;
+}
+
+.article-wrapper {
+  background-color: rgb(75, 92, 92);
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgb(19, 19, 20);
+  border-radius: 15px;
+}
+
+.article-title {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.login-link {
+  margin-bottom: 75px;
 }

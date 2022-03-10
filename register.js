@@ -19,14 +19,20 @@ async function registerUser(newUserObj) {
     });
     const response = await res.json();
     if (!response.success) {
-      errorMessage.textContent = 'Could not create user';
-      setTimeout(() => {
-        errorMessage.textContent = '';
-      }, 5000);
+      createErrorMessage();
       return;
     }
     allMainElements.forEach((main) => {
       main.classList.toggle('hidden');
     });
-  } catch (error) {}
+  } catch (error) {
+    createErrorMessage();
+  }
+}
+
+function createErrorMessage() {
+  errorMessage.textContent = 'Could not create user';
+  setTimeout(() => {
+    errorMessage.textContent = '';
+  }, 5000);
 }

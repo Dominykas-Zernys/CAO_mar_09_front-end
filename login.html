@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
 </head>
 <body>
     <main>
         <h1>Login</h1>
         <form action="" id="login-form">
             <label for="">Email:</label>
-            <input type="email">
+            <input type="email" id="email-input">
             <label for="">Password:</label>
-            <input type="text">
+            <input type="text" id="password-input">
+            <div id="error-message" class="error-message"></div>
             <button class="submit-button">Login</button>
         </form>
     </main>
